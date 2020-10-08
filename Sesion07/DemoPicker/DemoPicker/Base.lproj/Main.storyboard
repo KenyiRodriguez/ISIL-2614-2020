@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Seleccione una fecha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bUs-b3-o3O" customClass="AMUITextField" customModule="DemoPicker" customModuleProvider="target">
+                                <rect key="frame" x="36" y="84" width="342" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="U2X-KW-84F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="conerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qs1-lc-x78"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Seleccione un documento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DBz-SH-G3m" customClass="AMUITextField" customModule="DemoPicker" customModuleProvider="target">
+                                <rect key="frame" x="36" y="176" width="342" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="o13-ec-lvL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="conerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="O4H-F2-Jj0"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bUs-b3-o3O" secondAttribute="trailing" constant="36" id="PIP-qh-at7"/>
+                            <constraint firstItem="bUs-b3-o3O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="Sax-8K-NMG"/>
+                            <constraint firstItem="DBz-SH-G3m" firstAttribute="trailing" secondItem="bUs-b3-o3O" secondAttribute="trailing" id="cCP-uN-AVb"/>
+                            <constraint firstItem="bUs-b3-o3O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="gDv-Je-p8c"/>
+                            <constraint firstItem="DBz-SH-G3m" firstAttribute="leading" secondItem="bUs-b3-o3O" secondAttribute="leading" id="jNR-uj-CZp"/>
+                            <constraint firstItem="DBz-SH-G3m" firstAttribute="top" secondItem="bUs-b3-o3O" secondAttribute="bottom" constant="48" id="t4H-Kq-JO6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtDate" destination="bUs-b3-o3O" id="v3v-fP-3zs"/>
+                        <outlet property="txtDocument" destination="DBz-SH-G3m" id="szH-o2-hF3"/>
+                        <segue destination="6Ta-oU-ZRE" kind="presentation" identifier="DatePickerSelectViewController" animates="NO" modalPresentationStyle="overCurrentContext" id="F3Y-Zc-3HM"/>
+                        <segue destination="M6q-UP-Cey" kind="presentation" identifier="PickerOptionViewController" animates="NO" modalPresentationStyle="overCurrentContext" id="DrN-3f-fLa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Picker Option View Controller-->
+        <scene sceneID="p7i-22-r3p">
+            <objects>
+                <viewController id="M6q-UP-Cey" customClass="PickerOptionViewController" customModule="DemoPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4al-qn-aLI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uuk-b8-hwc">
+                                <rect key="frame" x="0.0" y="660" width="414" height="236"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWc-9g-mRL">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="M6q-UP-Cey" id="zWn-Lf-myr"/>
+                                            <outlet property="delegate" destination="M6q-UP-Cey" id="dJU-IT-sD8"/>
+                                        </connections>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="JWc-9g-mRL" firstAttribute="top" secondItem="Uuk-b8-hwc" secondAttribute="top" id="Vyv-Yc-JDu"/>
+                                    <constraint firstAttribute="bottom" secondItem="JWc-9g-mRL" secondAttribute="bottom" constant="20" id="Wlu-NK-3dF"/>
+                                    <constraint firstItem="JWc-9g-mRL" firstAttribute="leading" secondItem="Uuk-b8-hwc" secondAttribute="leading" id="gpq-uc-Kso"/>
+                                    <constraint firstAttribute="trailing" secondItem="JWc-9g-mRL" secondAttribute="trailing" id="vzI-o2-OQg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="black_50"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Uuk-b8-hwc" firstAttribute="leading" secondItem="pXK-oY-lOv" secondAttribute="leading" id="7Ij-o4-anw"/>
+                            <constraint firstAttribute="bottom" secondItem="Uuk-b8-hwc" secondAttribute="bottom" id="ReI-lu-dAp"/>
+                            <constraint firstItem="Uuk-b8-hwc" firstAttribute="trailing" secondItem="pXK-oY-lOv" secondAttribute="trailing" id="aX3-VZ-X9N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pXK-oY-lOv"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="mqn-vC-eLW" appends="YES" id="d7C-Ii-QLp"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZG2-NE-Lzv"/>
+                    <connections>
+                        <outlet property="picker" destination="JWc-9g-mRL" id="5KP-Bk-Uxp"/>
+                        <outlet property="pickerViewContent" destination="Uuk-b8-hwc" id="Bec-7y-fZf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qwb-va-ovg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mqn-vC-eLW">
+                    <connections>
+                        <action selector="tapToClose:" destination="M6q-UP-Cey" id="STq-UU-5C9"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1082.608695652174" y="471.42857142857139"/>
+        </scene>
+        <!--Date Picker Select View Controller-->
+        <scene sceneID="1v5-uP-5MO">
+            <objects>
+                <viewController id="6Ta-oU-ZRE" customClass="DatePickerSelectViewController" customModule="DemoPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="agE-7j-jcE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yx5-M4-xH5">
+                                <rect key="frame" x="0.0" y="660" width="414" height="236"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="l3q-Ts-kBZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                                        <date key="minimumDate" timeIntervalSinceReferenceDate="600174000">
+                                            <!--2020-01-08 11:00:00 +0000-->
+                                        </date>
+                                        <locale key="locale" localeIdentifier="es_PE"/>
+                                        <connections>
+                                            <action selector="changeDateSelect:" destination="6Ta-oU-ZRE" eventType="valueChanged" id="Xsf-oH-wGG"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="l3q-Ts-kBZ" secondAttribute="bottom" constant="20" id="PAb-pL-5S3"/>
+                                    <constraint firstItem="l3q-Ts-kBZ" firstAttribute="leading" secondItem="Yx5-M4-xH5" secondAttribute="leading" id="US5-Eg-WCt"/>
+                                    <constraint firstAttribute="trailing" secondItem="l3q-Ts-kBZ" secondAttribute="trailing" id="cH3-1L-EGw"/>
+                                    <constraint firstItem="l3q-Ts-kBZ" firstAttribute="top" secondItem="Yx5-M4-xH5" secondAttribute="top" id="qU0-7w-HFK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="black_50"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Yx5-M4-xH5" secondAttribute="bottom" id="FC5-ml-2sD"/>
+                            <constraint firstItem="Yx5-M4-xH5" firstAttribute="leading" secondItem="EWf-lj-XcX" secondAttribute="leading" id="ZLD-l1-G0F"/>
+                            <constraint firstItem="Yx5-M4-xH5" firstAttribute="trailing" secondItem="EWf-lj-XcX" secondAttribute="trailing" id="nmE-PO-fRJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EWf-lj-XcX"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="xQa-Eb-xXJ" appends="YES" id="fRb-Bi-ZDq"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="AZg-H2-xbe"/>
+                    <connections>
+                        <outlet property="datePicker" destination="l3q-Ts-kBZ" id="Avn-7t-QiF"/>
+                        <outlet property="pickerViewContent" destination="Yx5-M4-xH5" id="Vzj-76-tBb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iSY-fc-jEJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xQa-Eb-xXJ">
+                    <connections>
+                        <action selector="tapToClose:" destination="6Ta-oU-ZRE" id="w1y-ro-JH3"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1083" y="-200"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="black_50">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
