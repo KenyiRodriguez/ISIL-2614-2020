@@ -11,6 +11,7 @@
 		FB950E1D2554420100E7CBF4 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB950E1C2554420100E7CBF4 /* PlacesViewController.swift */; };
 		FB950E1F255452AC00E7CBF4 /* PlaceBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB950E1E255452AC00E7CBF4 /* PlaceBE.swift */; };
 		FB950E212554539600E7CBF4 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB950E202554539600E7CBF4 /* PlaceTableViewCell.swift */; };
+		FBCFD9E1255D8C1E009CAA04 /* ImageDownloaded.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCFD9E0255D8C1E009CAA04 /* ImageDownloaded.swift */; };
 		FBF66905254B0CE800A12D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF66904254B0CE800A12D6C /* AppDelegate.swift */; };
 		FBF66907254B0CE800A12D6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF66906254B0CE800A12D6C /* SceneDelegate.swift */; };
 		FBF66909254B0CE800A12D6C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF66908254B0CE800A12D6C /* MapViewController.swift */; };
@@ -27,6 +28,7 @@
 		FB950E1C2554420100E7CBF4 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		FB950E1E255452AC00E7CBF4 /* PlaceBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBE.swift; sourceTree = "<group>"; };
 		FB950E202554539600E7CBF4 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		FBCFD9E0255D8C1E009CAA04 /* ImageDownloaded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageDownloaded.swift; path = ../../DescargaDeImagenes/DescargaDeImagenes/ImageDownloaded.swift; sourceTree = "<group>"; };
 		FBF66901254B0CE800A12D6C /* DemoCocoaPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCocoaPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF66904254B0CE800A12D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF66906254B0CE800A12D6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				FB950E1C2554420100E7CBF4 /* PlacesViewController.swift */,
 				FB950E1E255452AC00E7CBF4 /* PlaceBE.swift */,
 				FB950E202554539600E7CBF4 /* PlaceTableViewCell.swift */,
+				FBCFD9E0255D8C1E009CAA04 /* ImageDownloaded.swift */,
 			);
 			path = DemoCocoaPods;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			files = (
 				FB950E1D2554420100E7CBF4 /* PlacesViewController.swift in Sources */,
 				FBF66909254B0CE800A12D6C /* MapViewController.swift in Sources */,
+				FBCFD9E1255D8C1E009CAA04 /* ImageDownloaded.swift in Sources */,
 				FBF66905254B0CE800A12D6C /* AppDelegate.swift in Sources */,
 				FB950E1F255452AC00E7CBF4 /* PlaceBE.swift in Sources */,
 				FBF66907254B0CE800A12D6C /* SceneDelegate.swift in Sources */,

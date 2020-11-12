@@ -19,17 +19,17 @@ class PlacesViewController: UIViewController {
         
         self.arrayPlaces.append(PlaceBE(name: "ISIL San Isidro",
                                         address: "Av. Faustino Sánchez Carrión 285, San Isidro 15076",
-                                        urlImage: "",
+                                        urlImage: "https://anarixefotografia.files.wordpress.com/2013/06/sabado-1.jpg",
                                         coordinate: CLLocationCoordinate2D(latitude: -12.0938308, longitude: -77.0551838)))
         
         self.arrayPlaces.append(PlaceBE(name: "ISIL Miraflores",
                                         address: "Av. Alfredo Benavides 778, Cercado de Lima 15074",
-                                        urlImage: "",
+                                        urlImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSjkal86yeWQf5At6aPB0qPIxonKwceBcK3CQ&usqp=CAU",
                                         coordinate: CLLocationCoordinate2D(latitude: -12.1254227, longitude: -77.027025)))
         
         self.arrayPlaces.append(PlaceBE(name: "ISIL La Molina",
                                         address: "Av. la Fontana 955, La Molina 15024",
-                                        urlImage: "",
+                                        urlImage: "https://isil.pe/wp-content/uploads/2018/12/home-bg-isil.jpg",
                                         coordinate: CLLocationCoordinate2D(latitude: -12.073370, longitude: -76.948071)))
     }
     
