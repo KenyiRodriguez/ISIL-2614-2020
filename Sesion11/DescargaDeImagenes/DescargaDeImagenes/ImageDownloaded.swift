@@ -10,7 +10,9 @@ import UIKit
 
 extension UIImageView {
     
-    func downloadImageInUrlString(_ urlString: String) {
+    typealias DownloadSuccess = (_ image: UIImage?, _ urlString: String) -> Void
+    
+    func downloadImageInUrlString(_ urlString: String, success: @escaping DownloadSuccess) {
         
         guard let url = URL(string: urlString) else {
             print("URL INVÁLIDA")
@@ -29,7 +31,7 @@ extension UIImageView {
             }
             
             DispatchQueue.main.async {
-                self.image = imageDownloaded
+                success(imageDownloaded, urlString)
             }
         }
     }
