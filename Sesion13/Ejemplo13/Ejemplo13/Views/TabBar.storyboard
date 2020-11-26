@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dGH-p2-l7M">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="5nm-ys-Vq5">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBar" id="dGH-p2-l7M" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sxs-Fk-fQC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bTJ-P9-yLd" kind="relationship" relationship="viewControllers" id="TFr-aB-5No"/>
+                        <segue destination="Mds-70-WNW" kind="relationship" relationship="viewControllers" id="coy-UP-1XV"/>
+                        <segue destination="fRm-4F-1Cf" kind="relationship" relationship="viewControllers" id="AQ9-hM-16M"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Fh-YV-BK5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-728" y="100"/>
+        </scene>
+        <!--MainCarteleraViewController-->
+        <scene sceneID="OcF-h3-ubi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Cartelera" referencedIdentifier="MainCarteleraViewController" id="bTJ-P9-yLd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="byF-AJ-AO9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pyP-qc-o2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2" y="37"/>
+        </scene>
+        <!--MainCinesViewController-->
+        <scene sceneID="iWV-lx-JHd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Cines" referencedIdentifier="MainCinesViewController" id="Mds-70-WNW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ZEo-h7-004"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="152-xd-dFV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-24" y="98"/>
+        </scene>
+        <!--PerfilViewController-->
+        <scene sceneID="DQj-yP-sqk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Perfil" referencedIdentifier="PerfilViewController" id="fRm-4F-1Cf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="t4j-wu-AeS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0a-6c-v6y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-40" y="157"/>
+        </scene>
+    </scenes>
+</document>
